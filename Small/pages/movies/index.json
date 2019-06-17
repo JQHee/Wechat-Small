@@ -2,6 +2,7 @@
   "navigationBarTitleText": "电影专区",
   "navigationBarBackgroundColor": "#2c2e3b",
   "usingComponents": {
-    "v-movice-swiper": "/components/movice-swiper/index"
+    "v-movice-swiper": "/components/movice-swiper/index",
+    "v-grid-page": "/components/grid-page/index"
   }
 }

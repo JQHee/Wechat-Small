@@ -1,2 +1,3 @@
 <!--pages/movies/index.wxml-->
 <v-movice-swiper imageDatas="{{bannerList}}"/>
+<v-grid-page list="{{categroyList}}"/>

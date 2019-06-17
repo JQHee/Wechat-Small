@@ -1,4 +1,5 @@
 var moviceData = require('movice-data/movice-data.js');
+var getCategoryList = require('category-data/category-data.js');
 
 // pages/movies/index.js
 Page({
@@ -7,13 +8,24 @@ Page({
    * 页面的初始数据
    */
   data: {
+    bannerList: [],
+    articleList: [],
+    categroyList: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData(moviceData);
+
+    
+    console.log(getCategoryList())
+
+    // 处理数据
+    this.setData({
+      bannerList: moviceData.bannerList,
+      categroyList: getCategoryList()
+    });
   },
 
   /**

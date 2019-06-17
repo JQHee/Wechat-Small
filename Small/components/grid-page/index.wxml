@@ -1,0 +1,26 @@
+<!--components/grid-page/index.wxml-->
+<!--index.wxml-->
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:362rpx" bindchange="bindChange">
+
+  <block wx:for="{{list}}" wx:for-index="idx" wx:for-item="itemName">
+    <swiper-item>
+      <view class="page__bd">
+        <view class="weui-grids">
+          <block wx:for-items="{{itemName.items}}" wx:key>
+            <view class="weui-grid" hover-class="weui-grid_active" data-index="{{index}}" data-id="{{itemName.pageIndex}}" bindtap="click">
+              <image class="weui-grid__icon" src="{{item.icon}}" />
+              <view class="weui-grid__label">{{item.name}}</view>
+            </view>
+          </block>
+        </view>
+      </view>
+    </swiper-item>
+  </block>
+
+</swiper>
+
+<view class="indicator">
+  <block wx:for="{{list}}" wx:for-index="idx" wx:for-item="itemName">
+    <view class="swiper_item" style="background-color:{{itemName.pageIndex == currentTab?'#04b00f':'#aaaaaa'}};"></view>
+  </block>
+</view>
