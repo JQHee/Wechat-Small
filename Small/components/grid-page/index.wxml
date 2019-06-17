@@ -1,5 +1,7 @@
 <!--components/grid-page/index.wxml-->
 <!--index.wxml-->
+
+
 <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:362rpx" bindchange="bindChange">
 
   <block wx:for="{{list}}" wx:for-index="idx" wx:key="this" wx:for-item="itemName">
@@ -16,7 +18,6 @@
       </view>
     </swiper-item>
   </block>
-
 </swiper>
 
 <view class="indicator">
@@ -24,3 +25,5 @@
     <view class="swiper_item" style="background-color:{{itemName.pageIndex == currentTab?'#04b00f':'#aaaaaa'}};"></view>
   </block>
 </view>
+
+
