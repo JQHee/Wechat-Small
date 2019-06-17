@@ -1,0 +1,12 @@
+<!--components/movice-swiper/index.wxml-->
+<!--轮播图-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" 
+  indicator-active-color="{{activeColor}}">
+  <block wx:for="{{imageDatas}}" wx:key>
+    <swiper-item>
+      <navigator url="{{item}}" hover-class="navigator-hover">
+        <image src="{{item}}" class="slide-image" width="355" height="200" />
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>

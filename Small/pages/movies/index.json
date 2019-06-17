@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "v-movice-swiper": "/components/movice-swiper/index"
+  }
+}

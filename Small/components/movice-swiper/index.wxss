@@ -1,0 +1,5 @@
+/* components/movice-swiper/index.wxss */
+/*轮播图*/
+.slide-image {
+  width: 100%;
+}
