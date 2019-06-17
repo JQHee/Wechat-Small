@@ -4,9 +4,10 @@
   indicator-active-color="{{activeColor}}">
   <block wx:for="{{imageDatas}}" wx:key>
     <swiper-item>
-      <navigator url="{{item}}" hover-class="navigator-hover">
-        <image src="{{item}}" class="slide-image" width="355" height="200" />
-      </navigator>
+      <image src="{{item}}" class="slide-image" width="355" height="200" bindtap='itemTapAction' data-item="{{item}}"/>
+      <!-- <navigator url="{{item}}" hover-class="navigator-hover" bindlongtap='tapAction'>
+        <image src="{{item}}" class="slide-image" width="355" height="200"  data-item="{{item}}"/>
+      </navigator> -->
     </swiper-item>
   </block>
 </swiper>

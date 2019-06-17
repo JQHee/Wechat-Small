@@ -114,5 +114,10 @@ Page({
         duration: 2000
       })
     }
+  },
+  tapClick: function (event) {
+    let detail = event.detail
+    console.log("父类收到的值" + detail)
   }
+
 })

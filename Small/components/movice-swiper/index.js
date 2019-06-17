@@ -45,8 +45,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    tapAction: function (value) {
-      this.triggerEvent('tapAction', value);
+    itemTapAction: function (e) {
+      // item 为自定义的绑定字段
+      let item = e.currentTarget.dataset.item
+      console.log(item)
+      this.triggerEvent('parentEvent', item)
     }
   }
 })
