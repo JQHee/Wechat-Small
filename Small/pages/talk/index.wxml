@@ -1,13 +1,19 @@
 <!--pages/talk/index.wxml-->
- <top-tab tabTitle="{{tabTitle}}">
-      <view slot="0">
-        <view >{{"123"}}</view>
-      </view>
-      <view slot="1">
-        <view >{{"456"}}</view>
-      </view>
-      <view slot="2">
-        <view >{{"789"}}</view>
-      </view>
-    
-  </top-tab>
+
+<top-tab tabTitle="{{tabTitle}}">
+  <view slot="0">
+    <view >{{"123"}}</view>
+  </view>
+  <view slot="1">
+    <view >{{"456"}}</view>
+  </view>
+  <view slot="2">
+    <view >{{"789"}}</view>
+  </view>  
+</top-tab>
+
+  <view style="position:fixed;bottom:0;">
+    <view>{{"底部锁定"}}</view>
+  </view>
+
+
