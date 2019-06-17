@@ -29,7 +29,7 @@ Component({
       console.log(e.currentTarget.dataset.id)
       console.log(e.currentTarget.dataset.index)
       wx.showToast({
-        title: '第' + e.currentTarget.dataset.id + '栏' + '第' + e.currentTarget.dataset.index + '个',
+        title: '第' + e.currentTarget.dataset.id + '页' + '第' + e.currentTarget.dataset.index + '个',
         icon: 'success',
         duration: 1500
       })
