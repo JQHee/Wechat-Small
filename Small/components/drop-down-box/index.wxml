@@ -1,0 +1,17 @@
+<!--components/drop-down-box/index.wxml-->
+<!-- 下拉框 -->
+<view class="dropdown">
+  <view wx:for="{{dropdownData}}" wx:key="this" data-index="{{index}}" catchtap="dropdownTap">
+    <text class='{{id == index ? "dropdown_active":""}}'>{{dropdownData[index]}}</text>
+    <image src='{{id == index ? "sort_active.png": "sort.png"}}'></image>
+  </view>
+</view>
+<!-- 下拉框选项 -->
+<view class="sort {{upordown}}" hidden='{{sort_hidden}}'>
+  <view wx:for="{{selectData}}" wx:key="this" data-index="{{index}}" catchtap="optionTap">
+    <text class='{{key == index ? "dropdown_active":""}}'>{{selectData[index]}}</text>
+    <image src='choice.png' class='{{key==index ? "show":"hide"}}'></image>
+  </view>
+</view>
+<!-- 遮罩 -->
+<view class='zhezhao' hidden='{{zhezhao}}'></view>

@@ -12,8 +12,10 @@
   </view>  
 </top-tab>
 
-  <view style="position:fixed;bottom:0;">
-    <view>{{"底部锁定"}}</view>
-  </view>
+<!-- <drop-down-box/> -->
+
+<view style="position:fixed;bottom:0;">
+  <view>{{"底部锁定"}}</view>
+</view>
 
 
