@@ -95,6 +95,9 @@ Page({
     };
     return shareObj;
   },
+  methods: {
+
+  },
   likeThis: function (e) {
     let [that, index] = [
       this,
