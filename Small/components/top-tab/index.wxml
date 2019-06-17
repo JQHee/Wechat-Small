@@ -1,0 +1,11 @@
+<!--components/top-tab/index.wxml-->
+<view class="contain">
+    <view class="tab" style="position:fixed;left:0;top:{{positionTop}}"> 
+          <view wx:for="{{tabTitle}}" wx:key="{{index}}" class="tab-son {{currentNum==index?'active':''}}" bindtap='toggle' data-index="{{index}}">{{item}}</view>
+    </view> 
+    <view class="tab-content" style="padding-top:{{paddingTop}}">
+        <view wx:for="{{tabTitle}}" wx:key="{{index}}" class="tab-contents {{currentNum==index?'on':''}}">
+            <slot name="{{index}}"></slot>
+        </view>
+    </view>
+</view>

@@ -1,2 +1,13 @@
 <!--pages/talk/index.wxml-->
-<text>pages/talk/index.wxml</text>
+ <top-tab tabTitle="{{tabTitle}}">
+      <view slot="0">
+        <view >{{"123"}}</view>
+      </view>
+      <view slot="1">
+        <view >{{"456"}}</view>
+      </view>
+      <view slot="2">
+        <view >{{"789"}}</view>
+      </view>
+    
+  </top-tab>
