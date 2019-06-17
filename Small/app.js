@@ -1,27 +1,22 @@
-const Login = require('/common/network/login.js');
-import config from '/common/network/config.js';
 
 //app.js
 App({
   onLaunch: function () {
-    //设置登录的服务器地址
-    Login.setLoginUrl(config.loginUrl);
-    // 登录
-    this.globalData.userInfo = wx.getStorageSync('user');
-    this.doLogin();
-  },
-  doLogin() {
-    Login.login({
-      success: result => {
-        console.log('登录成功', result);
-        wx.setStorageSync('user', result);
-        this.globalData.userInfo = result;
-        //console.log(wx.getStorageSync('user'))
-      },
-      fail: (error) => {
-        console.log('登录失败', error);
+    wx.getLocation({
+      type: 'gcj02',
+      success: function (res) {
+        var latitude = res.latitude
+        var longitude = res.longitude
+        wx.request({
+          url: 'http://api.map.baidu.com/geocoder/v2/?ak=btsVVWf0TM1zUBEbzFz6QqWF&coordtype=gcj02ll&location=' + latitude + ',' + longitude + '&output=json&pois=0',
+          method: "get",
+          success: function (res) {
+            console.log(res.data.result.formatted_address)
+            wx.setStorageSync('location', res.data.result.formatted_address.substr(res.data.result.formatted_address.indexOf('市') + 1, 10))
+          }
+        })
       }
-    });
+    })
   },
   getUserInfo(cb) {
     if (this.globalData.userInfo) {
@@ -40,6 +35,7 @@ App({
     }
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    location: ""
   }
 })
