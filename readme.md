@@ -8,3 +8,6 @@
 
 #### 小程序分包下载
 - http://www.fly63.com/article/detial/1175
+
+#### 导航条定制
+- https://www.jianshu.com/p/fdc33d3e81aa

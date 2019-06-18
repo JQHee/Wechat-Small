@@ -1,0 +1,30 @@
+<!--components/show-imags/index.wxml-->
+<!-- 添加图片显示 -->
+<scroll-view class='report-scroll-view' scroll-x="true">
+      <view class='scroll-view-inner'>
+          <view 
+            class='upload-img-box' 
+            wx:for="{{tempFilePaths}}" 
+            wx:key="*this"
+          >
+              <image 
+                src="{{item.url?item.url:item}}" 
+                class='upload-img' 
+                bindtap='previewImg'
+                data-img = '{{item.url?item.url:item}}'
+                mode="aspectFill"
+              >
+              </image>
+              <image 
+                src="/image/application_close.png" 
+                class='img-delete' 
+                bindtap='deleteImg' 
+                data-index="{{index}}"
+              >
+              </image>
+          </view>
+        <view class='upload-img-box' bindtap='addImg' hidden='{{hideAddBtn}}'>
+          <image src="/image/upload.png" class='upload-img' > </image>
+        </view>
+      </view>
+    </scroll-view>

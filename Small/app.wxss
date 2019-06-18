@@ -20,14 +20,3 @@ text{
     color: #333333;
 }
 
-.btn-hover{
-  position: relative;
-  top: 3rpx;
-  box-shadow:0px 0px 8px #999 inset; 
-}
-/* 镂空按钮 点击阴影不宜太深 */
-.plain-hover{
-  position: relative;
-  top: 3rpx;
-  box-shadow:0px 0px 10px #bbbec4 inset; 
-}

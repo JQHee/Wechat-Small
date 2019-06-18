@@ -14,8 +14,8 @@
 
 <!-- <drop-down-box/> -->
 
-<view style="position:fixed;bottom:0;">
-  <view>{{"底部锁定"}}</view>
+<view style="position:fixed;bottom:0; left: 0; right: 0;">
+  <common-button custom-class='custom'></common-button>
 </view>
 
 

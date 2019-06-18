@@ -1,0 +1,14 @@
+/* components/common-button/index.wxss */
+.btn {
+  /* width: 80%;
+  background-color: burlywood;
+  color: white;
+  border-radius: 98rpx; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.detail-hover{
+    opacity: 0.8;
+}

@@ -1,0 +1,28 @@
+/* components/show-imags/index.wxss */
+.report-scroll-view{
+  width:100%;
+}
+.scroll-view-inner{
+  display: flex;
+  width:auto;
+}
+.upload-img-box{
+  display: inline-block;
+  flex-shrink: 0; /*flex-shrink: 0; 表示 flex 元素超出容器时，宽度不压缩，这样就能撑开元素的宽度，使得出现滚动条。*/
+  width: 160rpx;
+  height: 160rpx;
+  position: relative;
+  margin-right: 16rpx;
+}
+.upload-img{
+  width: 160rpx;
+  height: 160rpx;
+  display: inline-block;
+}
+.img-delete{
+  position: absolute;
+  right: -7rpx;
+  top:0;   /*暂时先这样*/
+  width:40rpx;
+  height: 40rpx;
+}

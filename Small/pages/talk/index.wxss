@@ -1,1 +1,11 @@
 /* pages/talk/index.wxss */
+.custom {
+  width: 80%;
+  background-color: burlywood;
+  color: white;
+  border-radius: 98rpx;
+}
+
+button::after{
+  border:none;
+}
