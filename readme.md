@@ -11,3 +11,4 @@
 
 #### 导航条定制
 - https://www.jianshu.com/p/fdc33d3e81aa
+- 图片的选择和上传：https://www.cnblogs.com/xuzhengzong/p/7562175.html
