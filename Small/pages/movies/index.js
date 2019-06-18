@@ -132,7 +132,7 @@ Page({
     console.log("父类收到的值" + detail)
     wx.navigateTo({
 
-      url: '/pages/web/index?url=' + "https://www.baidu.com" //跳转路径
+      url: '/package/pages/web/index?url=' + "https://www.baidu.com" //跳转路径
 
     })
   },

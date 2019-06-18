@@ -4,8 +4,15 @@
     "pages/movies/index",
     "pages/talk-detail/index",
     "pages/more-movice/index",
-    "pages/movice-detail/index",
-    "pages/web/index"
+    "pages/movice-detail/index"
+  ],
+  "subpackages":[
+    {
+      "root": "package",
+      "pages": [
+        "pages/web/index"
+      ]
+    }
   ],
   "window": {
     "navigationBarBackgroundColor": "#d4d4d4"

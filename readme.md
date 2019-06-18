@@ -5,3 +5,6 @@
 
 #### wepy
 - https://github.com/Tencent/wepy
+
+#### 小程序分包下载
+- http://www.fly63.com/article/detial/1175
