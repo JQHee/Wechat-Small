@@ -1,5 +1,5 @@
 <!--components/listView/listView.wxml-->
-<!-- bindscrolltolower 没有触发，原因是：scroll-view 元素的高度必须是设备的高度 -->
+<!-- bindscrolltolower 没有触发，原因是：scroll-view 元素的高度必须是设备的高度,单位是px -->
 <view class='listView_box custom-class' capture-bind:touchstart='touchStart' capture-bind:touchmove='touchMove' capture-catch:touchend='touchEnd'>
     <scroll-view scroll-y='{{scrollY}}' class='listView_box' bindscrolltoupper='scrollTopListener' bindscrolltolower='scrollBottomListener' bindscroll='scrollListener' upper-threshold='0' lower-threshold='0' style='height:{{height}}px'>
         <!--头部-->
