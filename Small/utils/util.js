@@ -14,6 +14,21 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+/**
+ * 拨打电话 - 可简单封装工具集
+ */
+function callPhone(phoneNumber) {
+  wx.makePhoneCall({
+    phoneNumber: phoneNumber,
+    success: function() {
+      console.log("拨打电话成功！")
+    },
+    fail: function() {
+      console.log("拨打电话失败！")
+    }
+  })
+}
+
 function showToast(msg, duration = 1000) {
   wx.showToast({
     title: msg,

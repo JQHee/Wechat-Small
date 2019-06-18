@@ -1,7 +1,26 @@
 
 //app.js
 App({
+  onLoad: function (e) {
+    var that = this
+    wx.getSetting({
+      success: function (res) {
+        if (res.authSetting['scope.userInfo']) {
+          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
+          wx.getUserInfo({
+            success: function (res) {
+              app.globalData.userInfo = res.userInfo
+            }
+          })
+        }
+      }
+    })
+  },
   onLaunch: function () {
+
+  },
+  // 获取定位信息
+  getLocation() {
     wx.getLocation({
       type: 'gcj02',
       success: function (res) {
@@ -19,22 +38,6 @@ App({
         })
       }
     })
-  },
-  getUserInfo(cb) {
-    if (this.globalData.userInfo) {
-      typeof cb == "function" && cb(this.globalData.userInfo)
-    } else {
-      wx.login({
-        success: () => {
-          wx.getUserInfo({
-            success: (res) => {
-              this.globalData.userInfo = res.userInfo
-              typeof cb == "function" && cb(that.globalData.userInfo)
-            }
-          })
-        }
-      })
-    }
   },
   globalData: {
     userInfo: null,

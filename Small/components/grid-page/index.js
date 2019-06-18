@@ -41,5 +41,9 @@ Component({
       console.log(e.detail.current)
       this.setData({ currentTab: e.detail.current });
     },
+    // 截获竖向滑动
+    catchTouchMove: function (res) {
+      return false
+    },
   }
 })

@@ -50,6 +50,7 @@ Component({
       let item = e.currentTarget.dataset.item
       console.log(item)
       this.triggerEvent('parentEvent', item)
-    }
+    },
+
   }
 })
