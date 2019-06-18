@@ -49,34 +49,35 @@ let categoryList = [
   }
 ];
 
-function getCategoryList() {
-  // 处理分类页的数据
-  let allCount = categoryList.length
-  // 每一页的个数
-  let pageCount = 8
+const category = {
+  getCategoryList: function() {
+    // 处理分类页的数据
+    let allCount = categoryList.length
+    // 每一页的个数
+    let pageCount = 8
 
-  var tempCategoryList = []
-  // 总共可以分多少页
-  var allPage = allCount / pageCount + 1
-  // 每一页9个数据
-  for (let i = 0; i < allPage; i++) {
-    var tempDatas = []
-    var tempItem = {}
-    // 第一页取出前9个
-    for (let j = i * pageCount; j < (i + 1) * pageCount; j++) {
-      if (j < allCount) { // 防止越界
-        tempDatas.push(categoryList[j])
+    var tempCategoryList = []
+    // 总共可以分多少页
+    var allPage = allCount / pageCount + 1
+    // 每一页9个数据
+    for (let i = 0; i < allPage; i++) {
+      var tempDatas = []
+      var tempItem = {}
+      // 第一页取出前9个
+      for (let j = i * pageCount; j < (i + 1) * pageCount; j++) {
+        if (j < allCount) { // 防止越界
+          tempDatas.push(categoryList[j])
+        }
+      }
+      if (tempDatas.length != 0) {
+        tempItem = {
+          "pageIndex": i,
+          "items": tempDatas
+        }
+        tempCategoryList.push(tempItem)
       }
     }
-    if (tempDatas.length != 0) {
-      tempItem = {
-        "pageIndex": i,
-        "items": tempDatas
-      }
-      tempCategoryList.push(tempItem)
-    }
+    return tempCategoryList
   }
-  return tempCategoryList
 }
-
-module.exports = getCategoryList;
+module.exports = category;

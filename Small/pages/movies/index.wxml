@@ -1,3 +1,13 @@
 <!--pages/movies/index.wxml-->
-<v-movice-swiper imageDatas="{{bannerList}}" bind:parentEvent='tapClick'/>
-<v-grid-page list="{{categroyList}}"/>
+
+
+<list-view class='listView_box' length="1" emptyText='没有数据咯~' noMore='{{false}}' bind:onRefresh='onRefresh' bind:onLoadMore='onLoadMore' height="{{scrollH}}">
+		<view class='container-all'>
+      <v-movice-swiper imageDatas="{{bannerList}}" bind:parentEvent='tapClick'/>
+      <v-grid-page list="{{categroyList}}"/>
+      <v-grid-page list="{{categroyList}}"/>
+      <v-grid-page list="{{categroyList}}"/>
+      <v-grid-page list="{{categroyList}}"/>
+      <v-grid-page list="{{categroyList}}"/>
+    </view>
+	</list-view>

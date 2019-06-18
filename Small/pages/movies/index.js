@@ -1,5 +1,5 @@
 var moviceData = require('movice-data/movice-data.js');
-var getCategoryList = require('category-data/category-data.js');
+var category = require('category-data/category-data.js');
 
 // pages/movies/index.js
 Page({
@@ -10,7 +10,9 @@ Page({
   data: {
     bannerList: [],
     articleList: [],
-    categroyList: []
+    categroyList: [],
+    alreadyLoadData: true,
+    scrollH: 0
   },
 
   /**
@@ -19,12 +21,22 @@ Page({
   onLoad: function (options) {
 
     
-    console.log(getCategoryList())
+    console.log(category.getCategoryList())
 
     // 处理数据
     this.setData({
       bannerList: moviceData.bannerList,
-      categroyList: getCategoryList()
+      categroyList: category.getCategoryList()
+    });
+
+    var self = this;
+    wx.getSystemInfo({
+      success: function (res) {
+        let scrollH = res.windowHeight;
+        self.setData({
+          scrollH: scrollH
+        });
+      }
     });
   },
 
@@ -95,9 +107,6 @@ Page({
     };
     return shareObj;
   },
-  methods: {
-
-  },
   likeThis: function (e) {
     let [that, index] = [
       this,
@@ -121,6 +130,24 @@ Page({
   tapClick: function (event) {
     let detail = event.detail
     console.log("父类收到的值" + detail)
+    wx.navigateTo({
+
+      url: '/pages/web/index?url=' + "https://www.baidu.com" //跳转路径
+
+    })
+  },
+  onRefresh: function (e) {
+    var callback = e.detail;
+    setTimeout(function () {
+      callback.success();
+    }, 3000)
+  },
+  onLoadMore: function (e) {
+    console.log("上拉刷新")
+    var callback = e.detail;
+    setTimeout(function () {
+      callback.fail();
+    }, 3000)
   }
 
 })

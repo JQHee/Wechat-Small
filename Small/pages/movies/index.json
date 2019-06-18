@@ -3,6 +3,7 @@
   "navigationBarBackgroundColor": "#2c2e3b",
   "usingComponents": {
     "v-movice-swiper": "/components/movice-swiper/index",
-    "v-grid-page": "/components/grid-page/index"
+    "v-grid-page": "/components/grid-page/index",
+    "list-view": "/components/list-view/index"
   }
 }
