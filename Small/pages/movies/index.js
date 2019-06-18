@@ -149,7 +149,20 @@ Page({
       callback.fail();
     }, 3000)
   },
-  bindDownLoad: function() {
+  bingOnRefresh: function() {
+    wx.showLoading({ //期间为了显示效果可以添加一个过度的弹出框提示“加载中”  
+      title: '加载中',
+      icon: 'loading',
+    });
+    setTimeout(function () {
+      wx.hideLoading()
+      wx.showToast({
+        title: "下拉加载",
+        icon: "none"
+      })
+    }, 3000)
+  },
+  bindLoadMore: function() {
     console.log("上拉刷新")
     wx.showLoading({ //期间为了显示效果可以添加一个过度的弹出框提示“加载中”  
       title: '加载中',

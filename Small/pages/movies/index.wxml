@@ -4,7 +4,7 @@
 <!-- <list-view class='listView_box' length="1" emptyText='没有数据咯~' noMore='{{false}}' bind:onRefresh='onRefresh' bind:onLoadMore='onLoadMore' height="{{scrollH}}">
 
 	</list-view> -->
-<scroll-view scroll-y style='height: 100%;' bindscrolltolower="bindDownLoad">
+<scroll-view scroll-y style='height: 100%;' bindscrolltoupper="bingOnRefresh" bindscrolltolower="bindLoadMore">
   <view class='container-all'>
     <v-movice-swiper imageDatas="{{bannerList}}" bind:parentEvent='tapClick'/>
     <v-grid-page list="{{categroyList}}"/>
