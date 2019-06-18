@@ -79,7 +79,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    console.log("触底")
   },
 
   /**
@@ -151,6 +151,17 @@ Page({
   },
   bindDownLoad: function() {
     console.log("上拉刷新")
+    wx.showLoading({ //期间为了显示效果可以添加一个过度的弹出框提示“加载中”  
+      title: '加载中',
+      icon: 'loading',
+    });
+    setTimeout(function () {
+      wx.hideLoading()
+      wx.showToast({
+        title: "没有更多了",
+        icon: "none"
+      })
+    }, 3000)
   }
 
 })
