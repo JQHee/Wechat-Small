@@ -148,6 +148,9 @@ Page({
     setTimeout(function () {
       callback.fail();
     }, 3000)
+  },
+  bindDownLoad: function() {
+    console.log("上拉刷新")
   }
 
 })
