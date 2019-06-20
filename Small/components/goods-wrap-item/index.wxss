@@ -6,7 +6,7 @@
 }
 
 .help-select-card {
-  background: #fff;
+  background: orange;
   width: 100%;
   display: inline-flex; /*内部卡片需要设置为inline-block,否则会截断显示，如图一*/
   justify-content: center;
