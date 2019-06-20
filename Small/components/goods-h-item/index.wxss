@@ -1,0 +1,22 @@
+/* components/goods-wrap-item/index.wxss */
+.goods {
+   display: flex;
+} 
+.goods-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  margin-left: 10rpx;
+}
+.goods-image{
+  width: 150rpx;
+  height: 170rpx; 
+}
+.goods-item text {
+  font-size: 25rpx;
+} 
+.goods-item p{
+  font-size: 30rpx;
+}

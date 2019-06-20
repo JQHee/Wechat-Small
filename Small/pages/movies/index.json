@@ -6,6 +6,7 @@
     "v-grid-page": "/components/grid-page/index",
     "list-view": "/components/list-view/index",
     "theme-title": "/components/theme-topics-title/index",
-    "goods-item": "/components/goods-wrap-item/index"
+    "goods-h-item": "/components/goods-h-item/index",
+    "goods-v-item": "/components/goods-v-item/index"
   }
 }

@@ -1,9 +1,0 @@
-<!--components/goods-wrap-item/index.wxml-->
-<view class="help-select-contet">
-  <view class="help-select-card" wx:for="{{items}}"  wx:key="{{index}}">
-    <image mode="aspectFill" class="help-select-iamge" src="{{item.img}}" ></image>
-    <view class="help-goods-title">
-        {{item.name}}
-    </view>
-  </view>
-</view>

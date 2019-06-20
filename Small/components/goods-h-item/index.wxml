@@ -1,0 +1,14 @@
+<!--components/goods-wrap-item/index.wxml-->
+<!-- 左右滑动 -->
+<scroll-view scroll-x="true">
+  <view class="goods">
+      <block wx:for="{{items}}" wx:key>
+      <view class="goods-item" data-type="{{item.name}}" data-typeid="{{0}}">
+          <image src="{{item.img}}" class="goods-image" />   
+        <text>{{item.name}}</text>
+        <p>￥{{122}}</p>  
+      </view>
+    </block> 
+  </view>
+</scroll-view>
+

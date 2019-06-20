@@ -9,7 +9,8 @@
     <v-movice-swiper imageDatas="{{bannerList}}" bind:parentEvent='tapClick'/>
     <theme-title custom-class="theme-container" text="精选主题"></theme-title>
     <theme-title custom-class="theme-container" text="最新新品"></theme-title>
-    <goods-item items="{{goodItems}}"></goods-item>
+    <goods-h-item items="{{goodItems}}"></goods-h-item>
+    <goods-v-item items="{{goodItems}}"></goods-v-item>
     <v-grid-page list="{{categroyList}}"/>
     <v-grid-page list="{{categroyList}}"/>
     <v-grid-page list="{{categroyList}}"/>

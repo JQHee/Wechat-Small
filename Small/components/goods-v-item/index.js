@@ -1,4 +1,4 @@
-// components/goods-wrap-item/index.js
+// components/goods-v-item/index.js
 Component({
   /**
    * 组件的属性列表
@@ -6,7 +6,7 @@ Component({
   properties: {
     items: {
       type: Array,
-      value: [{img: String, name: String}]
+      value: []
     }
   },
 
