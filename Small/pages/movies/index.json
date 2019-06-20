@@ -4,6 +4,8 @@
   "usingComponents": {
     "v-movice-swiper": "/components/movice-swiper/index",
     "v-grid-page": "/components/grid-page/index",
-    "list-view": "/components/list-view/index"
+    "list-view": "/components/list-view/index",
+    "theme-title": "/components/theme-topics-title/index",
+    "goods-item": "/components/goods-wrap-item/index"
   }
 }

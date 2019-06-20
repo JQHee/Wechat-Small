@@ -1,5 +1,6 @@
 var moviceData = require('movice-data/movice-data.js');
 var category = require('category-data/category-data.js');
+var goods = require('goods-data/goods-data.js');
 
 // pages/movies/index.js
 Page({
@@ -11,6 +12,7 @@ Page({
     bannerList: [],
     articleList: [],
     categroyList: [],
+    goodItems: [],
     alreadyLoadData: true,
     scrollH: 0
   },
@@ -26,7 +28,8 @@ Page({
     // 处理数据
     this.setData({
       bannerList: moviceData.bannerList,
-      categroyList: category.getCategoryList()
+      categroyList: category.getCategoryList(),
+      goodItems: goods.goodList
     });
 
     var self = this;

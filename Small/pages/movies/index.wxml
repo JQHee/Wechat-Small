@@ -7,6 +7,9 @@
 <scroll-view scroll-y style='height: 100%;' bindscrolltoupper="bingOnRefresh" bindscrolltolower="bindLoadMore">
   <view class='container-all'>
     <v-movice-swiper imageDatas="{{bannerList}}" bind:parentEvent='tapClick'/>
+    <theme-title custom-class="theme-container" text="精选主题"></theme-title>
+    <theme-title custom-class="theme-container" text="最新新品"></theme-title>
+    <goods-item items="{{goodItems}}"></goods-item>
     <v-grid-page list="{{categroyList}}"/>
     <v-grid-page list="{{categroyList}}"/>
     <v-grid-page list="{{categroyList}}"/>
