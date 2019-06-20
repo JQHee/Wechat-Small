@@ -1,4 +1,8 @@
 // pages/web/index.js
+
+// 如果是分包 需要加 allowDefault 参数
+const app = getApp({ allowDefault: true })
+
 Page({
 
   /**
@@ -18,6 +22,7 @@ Page({
         url: options.url
       })
     }
+    console.log(app.globalData.userInfo)
   },
 
   /**

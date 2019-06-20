@@ -40,7 +40,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null,
+    userInfo: '123',
     location: ""
   }
 })
