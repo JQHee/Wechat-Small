@@ -1,9 +1,9 @@
 /* components/mine/mine-head/index.wxss */
 .main-container {
-  width: 100%;
+  
   height: 160rpx;
   background: orange;
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
@@ -16,7 +16,7 @@
   display: inline-block;
 }
 .right-container {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
@@ -26,7 +26,6 @@
   width: 30rpx;
   height: 30rpx;
   display: inline-block;
-  background: brown;
 }
 .right-container .right-text {
   color: white;
