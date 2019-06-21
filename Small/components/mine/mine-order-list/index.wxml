@@ -1,0 +1,12 @@
+<!--components/mine/mine-order-list/index.wxml-->
+<view class='list-container'>
+  <view class='list-title'>
+    <text class='list-title-text'>我的订单</text>
+  </view>
+  <block wx:for="{{items}}" wx:key>
+    <view class='list-item'>
+      <text class='list-text'>{{item}}</text>
+    </view>
+  </block>
+
+</view>

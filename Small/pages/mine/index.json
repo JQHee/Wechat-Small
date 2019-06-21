@@ -2,6 +2,8 @@
   "navigationBarTitleText": "我的",
   "navigationBarBackgroundColor": "#2c2e3b",
   "usingComponents": {
-    "v-header": "/components/mine/mine-header/index"
+    "v-header": "/components/mine/mine-header/index",
+    "v-address-list": "/components/mine/mine-address-list/index",
+    "v-order-list": "/components/mine/mine-order-list/index"
   }
 }

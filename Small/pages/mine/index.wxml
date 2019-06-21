@@ -1,2 +1,8 @@
 <!--pages/mine/index.wxml-->
-<v-header></v-header>
+<scroll-view scroll-y="true">
+  <v-header></v-header>
+  <v-address-list items="{{addressList}}" bind:addEvent="addAdressClick"></v-address-list>
+  <view style='background:#eee; height: 10rpx;'></view>
+  <v-order-list></v-order-list>
+</scroll-view>
+

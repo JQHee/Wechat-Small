@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    addressList: []
   },
 
   /**
@@ -62,5 +62,16 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  addAdressClick: function(e) {
+    const address = {
+      "name": "添加地址"
+    }
+    const tempList = this.data.addressList
+    tempList.push(address)
+    this.setData({
+      addressList: tempList
+    })
+    console.log("添加地址")
   }
 })

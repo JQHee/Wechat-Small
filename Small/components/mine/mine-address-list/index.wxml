@@ -1,0 +1,11 @@
+<!--components/mine/mine-address-list/index.wxml-->
+<view class='list-container'>
+  <block wx:for="{{items}}" wx:key>
+    <view class='list-item'>
+      <text class='list-text'>{{item.name}}</text>
+    </view>
+  </block>
+  <view class='list-add' bindtap='addAdressAction'>
+    <text class='list-add-text'>+ 添加地址</text>
+  </view>
+</view>
