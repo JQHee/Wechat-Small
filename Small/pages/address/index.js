@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    array: ['红色', '橙色', '黄色', '绿色', '青色', '蓝色', '紫色'],
+    index: 0,
   },
 
   /**
@@ -62,5 +63,11 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  bindPickerChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value);//index为数组点击确定后选择的item索引
+    this.setData({
+      index: e.detail.value
+    })
   }
 })
