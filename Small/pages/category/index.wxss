@@ -1,1 +1,12 @@
 /* pages/category/index.wxss */
+.main-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.right-container {
+  width: 100%;
+  height: 100%;
+}

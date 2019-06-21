@@ -1,5 +1,8 @@
 {
   "navigationBarTitleText": "分类",
   "navigationBarBackgroundColor": "#2c2e3b",
-  "usingComponents": {}
+  "usingComponents": {
+    "v-left": "/components/category/category-left/index",
+    "v-right": "/components/category/category-right/index"
+  }
 }

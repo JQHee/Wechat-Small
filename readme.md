@@ -14,3 +14,4 @@
 - tab: https://www.cnblogs.com/till-the-end/p/8935152.html
 - https://www.jianshu.com/p/fdc33d3e81aa
 - 图片的选择和上传：https://www.cnblogs.com/xuzhengzong/p/7562175.html 、 https://www.cnblogs.com/cisum/p/9244252.html
+- scroll-view页面联动：https://blog.csdn.net/dongguan_123/article/details/80598107

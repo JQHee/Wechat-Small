@@ -1,7 +1,7 @@
 <!--components/home/home-goods/index.wxml-->
 <scroll-view scroll-y="true">
   <view class="welfares">
-      <block wx:for="{{items}}" wx:key>
+    <block wx:for="{{items}}" wx:key>
       <view class="welfares-good" data-type="{{item.name}}" data-typeid="{{0}}">
         <view>
           <image src="{{item.img}}" class="welfares-image" mode="widthFix"/> 

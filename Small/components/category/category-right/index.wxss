@@ -1,0 +1,16 @@
+/* components/category/category-right/index.wxss */
+.main-container {
+  height: 100%;
+}
+.head-img-container {
+  padding: 20rpx;
+}
+.head-img-container .head-img {
+  width: 100%;
+  display: inline-block; 
+  /* 图片底部白边 */
+  vertical-align: bottom;
+}
+.good-items-container {
+  /* padding: 0 20rpx 20rpx 20rpx; */
+}

@@ -1,0 +1,15 @@
+<!--components/category/category-left/index.wxml-->
+<view class="list-view">
+  <scroll-view scroll-y="true" style='height: 100%;'>
+    <view class="list-container">
+    <block wx:for="{{items}}" wx:key>
+      <view class='list-item' data-id="{{item.id}}" data-index="{{index}}" data-item="{{item}}" bindtap='itemClick'>
+        <view class='item-left-line' style='{{ currentId == item.id ? "background: orange;" : "background: none;" }}'></view>
+        <view class='text-container'>
+          <text class='item-text' style='{{ currentId == item.id ? "color: orange;" : "color: black;" }}'>{{item.name}}</text>
+         </view>
+      </view>
+    </block>
+    </view>
+  </scroll-view>
+</view>

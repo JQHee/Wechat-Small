@@ -1,0 +1,14 @@
+<!--components/category/category-right/index.wxml-->
+<view class='main-container'>
+  <scroll-view scroll-y="true" style='height: 100%;'>
+    <view class='head-img-container'>
+      <image class='head-img' src='/images/banner/banner01.jpg' mode='widthFix'></image>
+    </view>
+    <view class='good-items-container'>
+      <v-goods items="{{items}}"></v-goods>
+    </view>
+  </scroll-view>
+</view>
+
+
+  

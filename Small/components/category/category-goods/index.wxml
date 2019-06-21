@@ -1,0 +1,13 @@
+<!--components/category/categrory-goods/index.wxml-->
+<view class="welfares">
+  <block wx:for="{{items}}" wx:key>
+    <view class="welfares-good" data-type="{{0}}" data-typeid="{{0}}">
+      <view class="item-container">
+        <image src="{{item.img}}" class="welfares-image" mode="widthFix"/>
+        <view class="product-name">
+          {{item.name}}
+        </view> 
+      </view>
+    </view>
+    </block>
+</view>

@@ -1,0 +1,30 @@
+/* components/category/categrory-goods/index.wxss */
+.welfares{
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin:10rpx 5rpx;
+}
+.welfares-good{
+  height: 220rpx; 
+  width: 30%;
+  margin:0px auto;
+  margin-bottom: 20rpx;
+  padding-top: 20rpx;
+  position: relative;
+  display: inline-block;
+  font-size: 24rpx;
+}
+.welfares-image{
+  width: 100%;
+  display: inline-block; 
+}
+.welfares-good .product-name{
+  color: #000;
+  height: 40rpx;
+  text-align:left;
+  margin: 0px 5px;
+  display: flex;
+  justify-content: center;  
+}

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "v-goods": "/components/category/category-goods/index"
+  }
+}
