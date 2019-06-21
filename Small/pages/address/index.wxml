@@ -2,6 +2,7 @@
 <scroll-view scroll-y="true">
   <input type='text' class='input-style' placeholder='请输入姓名' placeholder-class='custom-input-placeholder'></input>
   <input type='text' class='input-style' placeholder='请输入手机号'placeholder-class='custom-input-placeholder'></input>
+  <!-- index 为当前选中的索引值 -->
   <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
     <v-address-tip class="weui-btn" tip="省份：" ></v-address-tip>
   </picker>
