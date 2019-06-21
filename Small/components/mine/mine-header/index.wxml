@@ -1,0 +1,8 @@
+<!--components/mine/mine-head/index.wxml-->
+<view class='main-container'>
+  <image class='left-head-icon'src='/images/category/2.png' mode='widthFix'></image>
+  <view class='right-container'>
+    <image class='right-img-icon' src='/images/category/2.png' mode='widthFix'></image>
+    <text class='right-text'>关于我们</text>
+  </view>
+</view>

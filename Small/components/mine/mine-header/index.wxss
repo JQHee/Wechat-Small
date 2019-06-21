@@ -1,0 +1,35 @@
+/* components/mine/mine-head/index.wxss */
+.main-container {
+  width: 100%;
+  height: 160rpx;
+  background: orange;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.left-head-icon {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 20rpx;
+  border-radius: 50rpx;
+  display: inline-block;
+}
+.right-container {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 20rpx;
+}
+.right-container .right-img-icon {
+  width: 30rpx;
+  height: 30rpx;
+  display: inline-block;
+  background: brown;
+}
+.right-container .right-text {
+  color: white;
+  font-size: 26rpx;
+  margin-left: 20rpx;
+}
