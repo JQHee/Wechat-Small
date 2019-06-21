@@ -1,2 +1,10 @@
 <!--pages/address/index.wxml-->
-<text>pages/address/index.wxml</text>
+<scroll-view scroll-y="true">
+  <input type='text' class='input-style' placeholder='请输入姓名' placeholder-class='custom-input-placeholder'></input>
+  <input type='text' class='input-style' placeholder='请输入手机号'placeholder-class='custom-input-placeholder'></input>
+  <v-address-tip tip="省份："></v-address-tip>
+  <v-address-tip tip="城市："></v-address-tip>
+  <v-address-tip tip="区县："></v-address-tip>
+  <input type='text' class='input-style' placeholder='详细地址、如街道、楼牌号等'placeholder-class='custom-input-placeholder'></input>
+  <button class='save-button'>保存</button>
+</scroll-view>

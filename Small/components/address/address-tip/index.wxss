@@ -1,0 +1,17 @@
+/* components/address/address-tip/index.wxss */
+.address-item {
+  height: 80rpx;
+  border: 1rpx solid #eee;
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.address-item .tip-message {
+  font-size: 28rpx;
+  color: #333;
+}
+.address-item .tip-content {
+    font-size: 28rpx;
+    color: #333;
+}

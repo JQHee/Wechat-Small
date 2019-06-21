@@ -1,0 +1,5 @@
+<!--components/address/address-tip/index.wxml-->
+  <view class='address-item'>
+    <text class="tip-message">{{tip}}</text>
+    <text class="tip-content">{{tipContent}}</text>
+  </view>

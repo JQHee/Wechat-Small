@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "添加地址",
   "navigationBarBackgroundColor": "#2c2e3b",
-  "usingComponents": {}
+  "usingComponents": {
+    "v-address-tip": "/components/address/address-tip/index"
+  }
 }

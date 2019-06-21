@@ -1,1 +1,22 @@
 /* pages/address/index.wxss */
+.input-style {
+  height: 80rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.custom-input-placeholder {
+  font-size: 28rpx;
+  color: #333;
+}
+.save-button {
+  height: 100rpx;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  font-size: 30rpx;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

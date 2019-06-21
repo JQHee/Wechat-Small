@@ -64,6 +64,11 @@ Page({
 
   },
   addAdressClick: function(e) {
+    wx.navigateTo({
+      url: '/pages/address/index'//跳转路径
+    })
+
+    /*
     const address = {
       "name": "添加地址"
     }
@@ -73,5 +78,6 @@ Page({
       addressList: tempList
     })
     console.log("添加地址")
+    */
   }
 })
