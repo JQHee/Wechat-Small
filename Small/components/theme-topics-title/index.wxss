@@ -1,6 +1,0 @@
-/* components/theme-topics-title/index.wxss */
-.view-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}

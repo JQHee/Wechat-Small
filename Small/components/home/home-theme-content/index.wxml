@@ -1,0 +1,21 @@
+<!--components/home/home-theme-content/index.wxml-->
+  <view class="welfares">
+      <view class="welfares-good" style='background: orange;' data-type="{{0}}" data-typeid="{{0}}">
+        <view class="item-container">
+          <view class="product-name">
+            {{"美味水果世界"}}
+          </view>
+          <image src="/images/category/2.png" class="welfares-image" mode="widthFix"/> 
+        </view>
+      </view>
+
+      <view class="welfares-good" style='background: orange;' data-type="{{1}}" data-typeid="{{1}}">
+        <view class="item-container">
+          <view class="product-name">
+            {{"新品首发"}}
+          </view>
+          <image src="/images/category/2.png" class="welfares-image" mode="widthFix"/> 
+        </view>
+      </view>
+  </view>
+  <view class="bottom-container"></view>

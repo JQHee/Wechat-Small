@@ -23,6 +23,11 @@ Page({
       })
     }
     console.log(app.globalData.userInfo)
+    // 动态修改标题
+    wx.setNavigationBarTitle({
+      title: '趣味表情'
+    })
+
   },
 
   /**
@@ -71,6 +76,25 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    let that = this;
+    let shareObj = {
+      title: "分享",
+      path: '/package/pages/web/index',
+      success: function (res) {
+        // 转发成功之后的回调
+      },
+      fail: function (res) {
+        // 转发失败之后的回调
+        if (res.errMsg == 'shareAppMessage:fail cancel') {
+          // 用户取消转发
+        } else if (res.errMsg == 'shareAppMessage:fail') {
+          // 转发失败，其中  为详细失败信息
+        }
+      },
+      complete: function () {
+        // 转发结束之后的回调（转发成不成功都会执行）
+      }
+    };
+    return shareObj;
   }
 })

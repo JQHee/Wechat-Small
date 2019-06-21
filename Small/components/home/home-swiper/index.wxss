@@ -1,0 +1,4 @@
+/* components/home/home-swiper/index.wxss */
+.slide-image {
+  width: 100%;
+}

@@ -1,2 +1,0 @@
-<!--components/theme-topics-title/index.wxml-->
-<view class='view-container custom-class'>{{text}}</view>

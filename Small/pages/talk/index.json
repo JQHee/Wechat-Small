@@ -1,9 +1,0 @@
-{
-  "navigationBarTitleText": "阅读专区",
-  "navigationBarBackgroundColor": "#2c2e3b",
-  "usingComponents": {
-    "top-tab": "/components/top-tab/index",
-    "drop-down-box": "/components/drop-down-box/index",
-    "common-button": "/components/common-button/index"
-  }
-}

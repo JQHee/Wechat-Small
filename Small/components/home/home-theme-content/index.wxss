@@ -1,0 +1,41 @@
+/* components/home/home-theme-content/index.wxss */
+.welfares{
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin:10px 5px;
+}
+.welfares-good{
+  height: 360rpx; 
+  width: 47%;
+  margin:0px auto;
+  position: relative;
+  display: inline-block;
+  font-size: 24rpx;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welfares-image{
+  /* width: 250rpx;
+  height: 250rpx; */
+  width: 70%;
+  display: inline-block;
+}
+.welfares-good .product-name{
+  color: #fff;
+  height: 40rpx;
+  margin: 15rpx 5rpx 10rpx 5rpx;
+}
+
+.bottom-container {
+  background: orange;
+  height: 300rpx;
+  width: 100%;
+  margin-top: 15rpx;
+}

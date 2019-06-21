@@ -1,12 +1,11 @@
 {
   "pages": [
-    "pages/talk/index",
-    "pages/movies/index",
-    "pages/talk-detail/index",
-    "pages/more-movice/index",
-    "pages/movice-detail/index"
+    "pages/home/index",
+    "pages/category/index",
+    "pages/cart/index",
+    "pages/mine/index"
   ],
-  "subpackages":[
+  "subpackages": [
     {
       "root": "package",
       "pages": [
@@ -24,14 +23,26 @@
     "backgroundColor": "#2c2e3b",
     "list": [
       {
-        "pagePath": "pages/talk/index",
-        "text": "阅读",
+        "pagePath": "pages/home/index",
+        "text": "首页",
         "iconPath": "/images/tab/yuedu.png",
         "selectedIconPath": "/images/tab/yuedu_hl.png"
       },
       {
-        "pagePath": "pages/movies/index",
-        "text": "电影",
+        "pagePath": "pages/category/index",
+        "text": "分类",
+        "iconPath": "/images/tab/dianying.png",
+        "selectedIconPath": "/images/tab/dianying_hl.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "购物车",
+        "iconPath": "/images/tab/dianying.png",
+        "selectedIconPath": "/images/tab/dianying_hl.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
         "iconPath": "/images/tab/dianying.png",
         "selectedIconPath": "/images/tab/dianying_hl.png"
       }

@@ -1,0 +1,26 @@
+<!--pages/home/index.wxml-->
+<scroll-view scroll-y style='height: 100%;' bindscrolltoupper="bingOnRefresh">
+  <view class='container-all'>
+    <v-swiper imageDatas="{{bannerList}}" bind:parentEvent='tapClick'></v-swiper>
+    <v-theme-title custom-class="theme-container" text="精选主题"></v-theme-title>
+    <v-theme-content></v-theme-content>
+    <v-theme-title custom-class="theme-container" text="最新新品"></v-theme-title>
+    <v-goods items="{{goodItems}}"></v-goods>
+  </view>
+ </scroll-view>
+
+ <!-- <top-tab tabTitle="{{tabTitle}}">
+  <view slot="0">
+    <view >{{"123"}}</view>
+  </view>
+  <view slot="1">
+    <view >{{"456"}}</view>
+  </view>
+  <view slot="2">
+    <view >{{"789"}}</view>
+  </view>  
+</top-tab>
+
+<view style="position:fixed;bottom:0; left: 0; right: 0;">
+  <common-button custom-class='custom'></common-button>
+</view> -->
