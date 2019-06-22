@@ -18,7 +18,7 @@ Page({
    */
   onLoad: function (options) {
     const tempCategorys = [
-      { "name": "第一个分类第一个分类", "id": 1 }, 
+      { "name": "第一个分类第一个分类第一个分类第一个分类第一个分类第一个分类第一个分类第一个分类", "id": 1 }, 
       { "name": "第二个", "id": 2 }, 
       { "name": "第三个", "id": 3 },
       { "name": "第一个", "id": 4 },

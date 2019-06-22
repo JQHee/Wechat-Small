@@ -5,6 +5,12 @@
   display: flex;
   flex-direction: row;
 }
+.left-box {
+  width: 25%;
+}
+.right-box {
+  width: 75%;
+}
 
 .right-container {
   width: 100%;

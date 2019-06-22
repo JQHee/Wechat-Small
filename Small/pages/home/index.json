@@ -1,6 +1,5 @@
   {
     "navigationBarTitleText": "零食铺子",
-    "navigationBarBackgroundColor": "#2c2e3b",
     "usingComponents": {
       "v-swiper": "/components/home/home-swiper/index",
       "v-theme-title": "/components/home/home-theme-title/index",

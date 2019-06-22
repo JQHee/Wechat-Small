@@ -4,7 +4,8 @@
     "pages/category/index",
     "pages/cart/index",
     "pages/mine/index",
-    "pages/address/index"
+    "pages/address/index",
+    "pages/goods-detail/index"
   ],
   "subpackages": [
     {
@@ -15,13 +16,13 @@
     }
   ],
   "window": {
-    "navigationBarBackgroundColor": "#d4d4d4"
+    "navigationBarBackgroundColor": "#2c2e3b"
   },
   "tabBar": {
-    "color": "#fff",
+    "color": "#999",
     "selectedColor": "#87ceeb",
     "borderStyle": "black",
-    "backgroundColor": "#2c2e3b",
+    "backgroundColor": "#fff",
     "list": [
       {
         "pagePath": "pages/home/index",

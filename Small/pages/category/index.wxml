@@ -1,9 +1,9 @@
 <!--pages/category/index.wxml-->
 <view class="main-container">
-  <view style='width: 25%;'>
+  <view class='left-box'>
     <v-left items="{{categorys}}" currentId="{{currentId}}" bind:parentEvent="leftItemClick"></v-left>
   </view>
-  <view style='width: 75%;'>
+  <view  class='right-box'>
     <v-right items="{{goods}}"></v-right>
   </view>
 </view>
