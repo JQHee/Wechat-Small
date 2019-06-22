@@ -1,4 +1,5 @@
 <!--pages/home/index.wxml-->
+<navigator></navigator>
 <scroll-view scroll-y style='height: 100%;' bindscrolltoupper="bingOnRefresh">
   <view class='container-all'>
     <v-swiper imageDatas="{{bannerList}}" bind:parentEvent='tapClick'></v-swiper>
