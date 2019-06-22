@@ -6,9 +6,7 @@
         <view>
           <image src="{{item.img}}" class="welfares-image" mode="widthFix"/> 
         </view>
-        <view class="product-name">
-          {{item.name}}
-        </view>
+        <view class="product-name">{{item.name}}</view>
         <view class="product-price-wrap">
           <p class="product-price-new">￥{{1}}</p>  
           <p class="product-price-old">￥{{2}}</p> 
