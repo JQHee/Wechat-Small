@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "添加地址",
   "usingComponents": {
+    "v-navigation-bar": "/components/common/navigation-bar/index",
     "v-address-tip": "/components/address/address-tip/index"
   }
 }

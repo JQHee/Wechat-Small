@@ -1,4 +1,5 @@
 <!--pages/mine/index.wxml-->
+<v-navigation-bar showIcon="{{false}}" title="我的"></v-navigation-bar>
 <scroll-view scroll-y="true">
   <v-header></v-header>
   <v-address-list items="{{addressList}}" bind:addEvent="addAdressClick"></v-address-list>

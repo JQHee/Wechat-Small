@@ -1,6 +1,6 @@
 <!--components/category/category-left/index.wxml-->
 <view class="list-view">
-  <scroll-view scroll-y="true" style='height: 100%;'>
+  <scroll-view scroll-y="true" style='height: 100%;' scroll-with-animation="{{true}}">
     <view class="list-container">
       <block wx:for="{{items}}" wx:key>
         <view class='list-item' data-id="{{item.id}}" data-index="{{index}}" data-item="{{item}}" bindtap='itemClick'>

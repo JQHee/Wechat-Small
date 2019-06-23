@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "购物车",
-  "usingComponents": {}
+  "usingComponents": {
+    "v-navigation-bar": "/components/common/navigation-bar/index"
+  }
 }

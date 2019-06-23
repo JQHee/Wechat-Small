@@ -2,6 +2,7 @@
 //app.js
 App({
   onLoad: function (e) {
+    console.log(12);
     loginAction()
   },
   onLaunch: function () {
@@ -57,6 +58,11 @@ App({
   },
   globalData: {
     userInfo: '123',
-    location: ""
+    location: "",
+    statusBarHeight: 0,
+    titleBarHeight: 0,
+    navBarHeight: 0,
+    windowHeight: 0,
+    windowWidth: 0
   }
 })

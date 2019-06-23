@@ -1,4 +1,5 @@
 <!--pages/address/index.wxml-->
+<v-navigation-bar showIcon="{{false}}" title="添加地址"></v-navigation-bar>
 <scroll-view scroll-y="true">
   <input type='text' class='input-style' placeholder='请输入姓名' placeholder-class='custom-input-placeholder'></input>
   <input type='text' class='input-style' placeholder='请输入手机号'placeholder-class='custom-input-placeholder'></input>

@@ -11,12 +11,14 @@
     {
       "root": "package",
       "pages": [
-        "pages/web/index"
+        "pages/web/index",
+        "pages/test/index"
       ]
     }
   ],
   "window": {
-    "navigationBarBackgroundColor": "#2c2e3b"
+    "navigationBarBackgroundColor": "#2c2e3b",
+    "navigationStyle": "custom"
   },
   "tabBar": {
     "color": "#999",

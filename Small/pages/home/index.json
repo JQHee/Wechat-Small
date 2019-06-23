@@ -1,6 +1,7 @@
   {
     "navigationBarTitleText": "零食铺子",
     "usingComponents": {
+      "v-navigation-bar": "/components/common/navigation-bar/index",
       "v-swiper": "/components/home/home-swiper/index",
       "v-theme-title": "/components/home/home-theme-title/index",
       "v-theme-content": "/components/home/home-theme-content/index",
