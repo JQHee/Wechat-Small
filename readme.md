@@ -18,5 +18,6 @@
 - 图片的选择和上传：https://www.cnblogs.com/xuzhengzong/p/7562175.html 、 https://www.cnblogs.com/cisum/p/9244252.html
 - scroll-view页面联动：https://blog.csdn.net/dongguan_123/article/details/80598107
 - 利用系统自定义刷新：https://blog.csdn.net/liumude123/article/details/80401175
+- html标签解析：https://github.com/icindy/wxParse
 
 
