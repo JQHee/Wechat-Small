@@ -15,7 +15,17 @@ Component({
     showIcon: {
       type: Boolean,
       default: true
-    }
+    },
+    //  决定navback是否有效
+    enable: {
+      type: Boolean,
+      value: 'true'
+    },
+    //  可传入改变nav back页面数
+    delta: {
+      type: Number,
+      value: 1
+    },
   },
 
   /**
@@ -64,13 +74,14 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    //  navback监听函数
     headerBack() {
-      this.triggerEvent('parentEvent')
-      /*
-      wx.navigateBack({
-        delta: 1,
-      })
-      */
+      this.triggerEvent('back', {})
+      if (this.data.enable) {
+        wx.navigateBack({
+          delta: this.data.delta
+        })
+      }
     },
     headerHome() {
       wx.switchTab({
