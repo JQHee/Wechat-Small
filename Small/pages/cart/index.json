@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "购物车",
-  "navigationBarBackgroundColor": "#2c2e3b",
-  "usingComponents": {}
+  "usingComponents": {
+    "v-navigation-bar": "/components/common/navigation-bar/index"
+  }
 }

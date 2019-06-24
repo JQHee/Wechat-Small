@@ -1,6 +1,8 @@
 <!--pages/home/index.wxml-->
-<scroll-view scroll-y style='height: 100%;' bindscrolltoupper="bingOnRefresh">
+
+<scroll-view scroll-y style='height: 100%;' bindscrolltoupper="bingOnRefresh" upper-threshold="0">
   <view class='container-all'>
+    <v-navigation-bar showIcon="{{false}}" title="零食铺子"></v-navigation-bar>
     <v-swiper imageDatas="{{bannerList}}" bind:parentEvent='tapClick'></v-swiper>
     <v-theme-title custom-class="theme-container" text="精选主题"></v-theme-title>
     <v-theme-content></v-theme-content>

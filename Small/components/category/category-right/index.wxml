@@ -1,6 +1,6 @@
 <!--components/category/category-right/index.wxml-->
 <view class='main-container'>
-  <scroll-view scroll-y="true" style='height: 100%;'>
+  <scroll-view scroll-y="true" style='height: 100%;' scroll-with-animation="{{true}}">
     <view class='head-img-container'>
       <image class='head-img' src='/images/banner/banner01.jpg' mode='widthFix'></image>
     </view>

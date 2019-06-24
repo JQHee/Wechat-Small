@@ -1,15 +1,16 @@
 /* components/home/home-theme-content/index.wxss */
 .welfares{
   display: flex;
-  justify-content: left;
+  /* justify-content: left; */
   flex-direction: row;
   flex-wrap: wrap;
-  margin:10px 5px;
+  justify-content: space-between;
+  /* margin:10px 5px; */
 }
 .welfares-good{
   height: 360rpx; 
-  width: 47%;
-  margin:0px auto;
+  width: 49%;
+  /* margin:0px auto; */
   position: relative;
   display: inline-block;
   font-size: 24rpx;

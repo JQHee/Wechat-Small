@@ -105,10 +105,13 @@ Page({
     let detail = event.detail
     console.log("父类收到的值" + detail)
     wx.navigateTo({
-
       url: '/package/pages/web/index?url=' + "https://www.baidu.com" //跳转路径
-
     })
+    /*
+    wx.navigateTo({
+      url: '/package/pages/web/index?url=' + "https://www.baidu.com" //跳转路径
+    })
+    */
   },
   bingOnRefresh: function () {
     wx.showLoading({ //期间为了显示效果可以添加一个过度的弹出框提示“加载中”  

@@ -4,24 +4,27 @@
     "pages/category/index",
     "pages/cart/index",
     "pages/mine/index",
-    "pages/address/index"
+    "pages/address/index",
+    "pages/goods-detail/index"
   ],
   "subpackages": [
     {
       "root": "package",
       "pages": [
-        "pages/web/index"
+        "pages/web/index",
+        "pages/test/index"
       ]
     }
   ],
   "window": {
-    "navigationBarBackgroundColor": "#d4d4d4"
+    "navigationBarBackgroundColor": "#2c2e3b",
+    "navigationStyle": "custom"
   },
   "tabBar": {
-    "color": "#fff",
+    "color": "#999",
     "selectedColor": "#87ceeb",
     "borderStyle": "black",
-    "backgroundColor": "#2c2e3b",
+    "backgroundColor": "#fff",
     "list": [
       {
         "pagePath": "pages/home/index",
