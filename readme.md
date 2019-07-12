@@ -10,7 +10,7 @@
 #### 常用的开发框架
 - wepy：https://github.com/Tencent/wepy
 - mpvue: https://github.com/Meituan-Dianping/mpvue
-- taro：https://github.com/NervJS/taro
+- taro多端统一：https://github.com/NervJS/taro
 
 #### 小程序分包下载
 - http://www.fly63.com/article/detial/1175
