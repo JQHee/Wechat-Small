@@ -5,6 +5,7 @@
 - 电商项目：https://www.jianshu.com/p/6e214401ffdd、https://www.jianshu.com/p/cb27a10461d3
 - 城际拼车：https://github.com/jianjiayi/WX_Cloud_development_pinche
 - bilibili: https://github.com/HuPingKang/LZKKDemo
+- 民宿：https://github.com/JQHee/minsu 效果图：https://blog.csdn.net/zhanjinfeng/article/details/84062322
 
 #### wepy
 - https://github.com/Tencent/wepy
